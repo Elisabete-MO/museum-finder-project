@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Museu #1",
+    "description": "Descrição #1",
+    "address": "Endereço #1",
+    "collectionType": "Tipo #1",
+    "subject": "Assunto #1",
+    "url": "url #1",
+    "coordinate": {
+      "latitude": -11.111,
+      "longitude": -22.222
+    }
+  },
+  {
+    "name": "Museu #2",
+    "description": "Descrição #2",
+    "address": "Endereço #2",
+    "collectionType": "Tipo #2",
+    "subject": "Assunto #2",
+    "url": "url #2",
+    "coordinate": {
+      "latitude": 22.222,
+      "longitude": -33.333
+    }
+  },
+  {
+    "name": "Museu #3",
+    "description": "Descrição #3",
+    "address": "Endereço #3",
+    "collectionType": "Tipo #3",
+    "subject": "Assunto #3",
+    "url": "url #3",
+    "coordinate": {
+      "latitude": -33.333,
+      "longitude": 44.444
+    }
+  },
+  {
+    "name": "Museu #4",
+    "description": "Descrição #4",
+    "address": "Endereço #4",
+    "collectionType": "Tipo #4",
+    "subject": "Assunto #4",
+    "url": "url #4",
+    "coordinate": {
+      "latitude": 44.444,
+      "longitude": 55.555
+    }
+  }
+]
