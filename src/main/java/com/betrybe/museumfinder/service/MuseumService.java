@@ -33,7 +33,7 @@ public class MuseumService implements MuseumServiceInterface {
     double longitude = coordinate.longitude();
     validateCoordinates(latitude, longitude);
     return database.getClosestMuseum(coordinate, maxDistance)
-        .orElseThrow(() -> new MuseumNotFoundException("No museums found."));
+        .orElseThrow(() -> new MuseumNotFoundException());
   }
 
   @Override
@@ -44,7 +44,7 @@ public class MuseumService implements MuseumServiceInterface {
   private static void validateCoordinates(double latitude, double longitude) {
     Coordinate coordinate = new Coordinate(latitude, longitude);
     if (!CoordinateUtil.isCoordinateValid(coordinate)) {
-      throw new InvalidCoordinateException("Invalid data.");
+      throw new InvalidCoordinateException();
     }
   }
 }
