@@ -38,7 +38,7 @@ public class MuseumService implements MuseumServiceInterface {
 
   @Override
   public Museum getMuseum(Long id) {
-    return null;
+    return database.getMuseum(id).orElseThrow(MuseumNotFoundException::new);
   }
 
   private static void validateCoordinates(double latitude, double longitude) {

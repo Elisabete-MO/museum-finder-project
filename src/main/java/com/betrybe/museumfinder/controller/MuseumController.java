@@ -46,6 +46,17 @@ public class MuseumController {
     return ResponseEntity.ok(ModelDtoConverter.modelToDto(museum));
   }
 
+  /** Route to get a Museum by id.
+   *
+   * @param id Museum id.
+   * @return ResponseEntity with the Museum.
+   */
+  @GetMapping("/{id}")
+  public ResponseEntity<Museum> getFindMuseumById(@RequestParam long id) {
+    Museum museum = museumService.getMuseum(id);
+    return ResponseEntity.ok(museum);
+  }
+
   /** Route to create a new Museum.
    *
    * @param newMuseum MuseumDto object containing the data to be used to create a new Museum.
