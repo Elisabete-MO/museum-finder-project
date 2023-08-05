@@ -6,6 +6,7 @@ import com.betrybe.museumfinder.model.Coordinate;
 import com.betrybe.museumfinder.model.Museum;
 import com.betrybe.museumfinder.service.MuseumServiceInterface;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -37,6 +38,7 @@ public class MuseumControllerTest {
   }
 
   @Test
+  @DisplayName("Test gettingMuseumSuccessfully with valid id")
   public void gettingMuseumSuccessfully() throws Exception {
     Long museumId = 1L;
     Museum expectedMuseum = new Museum();
